@@ -1,0 +1,82 @@
+### Intelligent Customer Support System — sample requests
+### Open in the VS Code "REST Client" extension or the JetBrains HTTP client.
+
+@base = http://localhost:3000
+
+### Health check
+GET {{base}}/health
+
+### Create a ticket (no classification)
+POST {{base}}/tickets
+Content-Type: application/json
+
+{
+  "customer_id": "CUST-1001",
+  "customer_email": "ann.adler@example.com",
+  "customer_name": "Ann Adler",
+  "subject": "Question about my subscription",
+  "description": "I have a general question about how subscription billing works."
+}
+
+### Create a ticket WITH auto-classification
+POST {{base}}/tickets?autoClassify=true
+Content-Type: application/json
+
+{
+  "customer_id": "CUST-1002",
+  "customer_email": "ben.cole@example.com",
+  "customer_name": "Ben Cole",
+  "subject": "Cannot access my account",
+  "description": "I cannot access my account, this is critical and production is down."
+}
+
+### Bulk import (JSON) with auto-classification
+POST {{base}}/tickets/import?autoClassify=true
+Content-Type: application/json
+
+< ./sample-data.json
+
+### List all tickets (paginated)
+GET {{base}}/tickets?page=1&limit=10
+
+### Filter: combined category + priority
+GET {{base}}/tickets?category=account_access&priority=urgent
+
+### Filter: full-text search
+GET {{base}}/tickets?search=refund
+
+### Get one ticket — replace :id with a real id from a create/list response
+GET {{base}}/tickets/REPLACE_WITH_TICKET_ID
+
+### Update a ticket
+PUT {{base}}/tickets/REPLACE_WITH_TICKET_ID
+Content-Type: application/json
+
+{
+  "status": "in_progress",
+  "assigned_to": "agent-7"
+}
+
+### Auto-classify an existing ticket
+POST {{base}}/tickets/REPLACE_WITH_TICKET_ID/auto-classify
+
+### Manual classification override
+POST {{base}}/tickets/REPLACE_WITH_TICKET_ID/auto-classify
+Content-Type: application/json
+
+{
+  "category": "billing_question",
+  "priority": "high"
+}
+
+### Delete a ticket
+DELETE {{base}}/tickets/REPLACE_WITH_TICKET_ID
+
+### Validation error example (expect 400)
+POST {{base}}/tickets
+Content-Type: application/json
+
+{
+  "customer_email": "not-an-email",
+  "subject": "x"
+}

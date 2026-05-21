@@ -1,0 +1,371 @@
+[
+  {
+    "customer_id": "CUST-1050",
+    "customer_email": "ann.farah@example.com",
+    "customer_name": "Ann Farah",
+    "subject": "Application crashes on startup",
+    "description": "The application crashes every time I open it on desktop. This is only a minor cosmetic issue.",
+    "category": "technical_issue",
+    "priority": "low",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [
+      "escalated"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Firefox 126",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1051",
+    "customer_email": "bram.haas@example.com",
+    "customer_name": "Bram Haas",
+    "subject": "Bug with steps to reproduce",
+    "description": "Bug: steps to reproduce a crash when opening reports. This is critical and production is down.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "waiting_customer",
+    "assigned_to": "agent-7",
+    "tags": [],
+    "metadata": {
+      "source": "email",
+      "browser": "Safari 17",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1052",
+    "customer_email": "chloe.bishop@example.com",
+    "customer_name": "Chloe Bishop",
+    "subject": "Cannot login to my account",
+    "description": "I cannot log in to my account even after a password reset. This is important and blocking my work, please treat it asap.",
+    "category": "account_access",
+    "priority": "high",
+    "status": "closed",
+    "assigned_to": "",
+    "tags": [
+      "first-contact"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Edge 124",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1053",
+    "customer_email": "femi.adler@example.com",
+    "customer_name": "Femi Adler",
+    "subject": "Invoice amount looks wrong",
+    "description": "My latest invoice has a charge I do not recognise. This is critical and production is down.",
+    "category": "billing_question",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": "agent-3",
+    "tags": [
+      "enterprise"
+    ],
+    "metadata": {
+      "source": "chat",
+      "browser": "Firefox 126",
+      "device_type": "tablet"
+    }
+  },
+  {
+    "customer_id": "CUST-1054",
+    "customer_email": "chloe.iyer@example.com",
+    "customer_name": "Chloe Iyer",
+    "subject": "Update to my contact details",
+    "description": "I would like to update the contact details on file.",
+    "category": "other",
+    "priority": "medium",
+    "status": "waiting_customer",
+    "assigned_to": "agent-1",
+    "tags": [],
+    "metadata": {
+      "source": "chat",
+      "browser": "Edge 124",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1055",
+    "customer_email": "ann.costa@example.com",
+    "customer_name": "Ann Costa",
+    "subject": "Bug with steps to reproduce",
+    "description": "Bug: steps to reproduce a crash when opening reports. This is critical and production is down.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "closed",
+    "assigned_to": "agent-1",
+    "tags": [],
+    "metadata": {
+      "source": "phone",
+      "browser": "Chrome 124",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1056",
+    "customer_email": "jana.haas@example.com",
+    "customer_name": "Jana Haas",
+    "subject": "Application crashes on startup",
+    "description": "The application crashes every time I open it on desktop. This is important and blocking my work, please treat it asap.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "closed",
+    "assigned_to": "",
+    "tags": [
+      "follow-up"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Edge 124",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1057",
+    "customer_email": "jana.greco@example.com",
+    "customer_name": "Jana Greco",
+    "subject": "Cannot login to my account",
+    "description": "I cannot log in to my account even after a password reset.",
+    "category": "account_access",
+    "priority": "medium",
+    "status": "new",
+    "assigned_to": "agent-4",
+    "tags": [
+      "first-contact"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Firefox 126",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1058",
+    "customer_email": "grace.adler@example.com",
+    "customer_name": "Grace Adler",
+    "subject": "Bug with steps to reproduce",
+    "description": "Bug: steps to reproduce a crash when opening reports. This is critical and production is down.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "waiting_customer",
+    "assigned_to": "agent-3",
+    "tags": [
+      "enterprise"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Edge 124",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1059",
+    "customer_email": "femi.jung@example.com",
+    "customer_name": "Femi Jung",
+    "subject": "Cannot login to my account",
+    "description": "I cannot log in to my account even after a password reset. This is only a minor cosmetic issue.",
+    "category": "account_access",
+    "priority": "low",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [],
+    "metadata": {
+      "source": "api",
+      "browser": "Chrome 124",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1060",
+    "customer_email": "ivan.adler@example.com",
+    "customer_name": "Ivan Adler",
+    "subject": "Update to my contact details",
+    "description": "I would like to update the contact details on file.",
+    "category": "other",
+    "priority": "medium",
+    "status": "new",
+    "assigned_to": "agent-7",
+    "tags": [
+      "vip"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Edge 124",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1061",
+    "customer_email": "diego.bishop@example.com",
+    "customer_name": "Diego Bishop",
+    "subject": "Defect in search results",
+    "description": "There is a defect causing a regression in search results. This is critical and production is down.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [
+      "follow-up"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Firefox 126",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1062",
+    "customer_email": "bram.engel@example.com",
+    "customer_name": "Bram Engel",
+    "subject": "Inquiry about availability",
+    "description": "An inquiry about regional availability of your product. This is important and blocking my work, please treat it asap.",
+    "category": "other",
+    "priority": "high",
+    "status": "resolved",
+    "assigned_to": "",
+    "tags": [
+      "follow-up"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Edge 124",
+      "device_type": "tablet"
+    }
+  },
+  {
+    "customer_id": "CUST-1063",
+    "customer_email": "diego.costa@example.com",
+    "customer_name": "Diego Costa",
+    "subject": "Application crashes on startup",
+    "description": "The application crashes every time I open it on desktop. This is important and blocking my work, please treat it asap.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [
+      "first-contact"
+    ],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Safari 17",
+      "device_type": "tablet"
+    }
+  },
+  {
+    "customer_id": "CUST-1064",
+    "customer_email": "ivan.farah@example.com",
+    "customer_name": "Ivan Farah",
+    "subject": "Export feature throws an error",
+    "description": "I get an error and the app freezes when I export data. This is important and blocking my work, please treat it asap.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "waiting_customer",
+    "assigned_to": "",
+    "tags": [
+      "first-contact"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Safari 17",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1065",
+    "customer_email": "chloe.farah@example.com",
+    "customer_name": "Chloe Farah",
+    "subject": "Invoice amount looks wrong",
+    "description": "My latest invoice has a charge I do not recognise.",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [],
+    "metadata": {
+      "source": "api",
+      "browser": "Firefox 126",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1066",
+    "customer_email": "chloe.farah@example.com",
+    "customer_name": "Chloe Farah",
+    "subject": "Application crashes on startup",
+    "description": "The application crashes every time I open it on desktop. This is critical and production is down.",
+    "category": "technical_issue",
+    "priority": "urgent",
+    "status": "resolved",
+    "assigned_to": "",
+    "tags": [
+      "follow-up"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Safari 17",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1067",
+    "customer_email": "jana.engel@example.com",
+    "customer_name": "Jana Engel",
+    "subject": "Update to my contact details",
+    "description": "I would like to update the contact details on file. This is important and blocking my work, please treat it asap.",
+    "category": "other",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "agent-2",
+    "tags": [
+      "mobile"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Firefox 126",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST-1068",
+    "customer_email": "jana.bishop@example.com",
+    "customer_name": "Jana Bishop",
+    "subject": "Reproduction for layout bug",
+    "description": "Reproduction steps for a layout bug on the settings page.",
+    "category": "bug_report",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": "",
+    "tags": [],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Firefox 126",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST-1069",
+    "customer_email": "chloe.iyer@example.com",
+    "customer_name": "Chloe Iyer",
+    "subject": "Thanks for the great support",
+    "description": "Just wanted to say thank you to the support team. This is only a minor cosmetic issue.",
+    "category": "other",
+    "priority": "low",
+    "status": "waiting_customer",
+    "assigned_to": "",
+    "tags": [
+      "vip",
+      "first-contact"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Firefox 126",
+      "device_type": "tablet"
+    }
+  }
+]
