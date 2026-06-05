@@ -1,0 +1,16 @@
+[
+  {
+    "customer_id": "CUST-X1",
+    "customer_email": "bademail",
+    "customer_name": "Bad Email",
+    "subject": "Login issue",
+    "description": "I cannot log in to my account at all today."
+  },
+  {
+    "customer_id": "CUST-X2",
+    "customer_email": "ok@example.com",
+    "customer_name": "Short Desc",
+    "subject": "Hi",
+    "description": "too short"
+  }
+]

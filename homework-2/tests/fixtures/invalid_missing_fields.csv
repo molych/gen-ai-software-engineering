@@ -1,0 +1,3 @@
+customer_id,customer_email,customer_name,subject,description
+"CUST-1","not-an-email","No Subject Person","","short"
+"","missing@example.com","","A subject","This description is long enough to pass."

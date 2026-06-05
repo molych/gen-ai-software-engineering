@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_id>CUST-1070</customer_id>
+    <customer_email>bram.jung@example.com</customer_email>
+    <customer_name>Bram Jung</customer_name>
+    <subject>Invoice amount looks wrong</subject>
+    <description>My latest invoice has a charge I do not recognise. This is important and blocking my work, please treat it asap.</description>
+    <category>billing_question</category>
+    <priority>high</priority>
+    <status>resolved</status>
+    <assigned_to>agent-2</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Chrome 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1071</customer_id>
+    <customer_email>jana.engel@example.com</customer_email>
+    <customer_name>Jana Engel</customer_name>
+    <subject>General question about service</subject>
+    <description>I have a general question about how your service works.</description>
+    <category>other</category>
+    <priority>medium</priority>
+    <status>closed</status>
+    <assigned_to>agent-3</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Edge 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1072</customer_id>
+    <customer_email>chloe.costa@example.com</customer_email>
+    <customer_name>Chloe Costa</customer_name>
+    <subject>Dashboard page not working</subject>
+    <description>The dashboard page is not working and shows an error. This is important and blocking my work, please treat it asap.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>waiting_customer</status>
+    <assigned_to></assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Edge 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1073</customer_id>
+    <customer_email>bram.haas@example.com</customer_email>
+    <customer_name>Bram Haas</customer_name>
+    <subject>Payment keeps failing</subject>
+    <description>My credit card payment keeps failing at checkout. This is only a minor cosmetic issue.</description>
+    <category>billing_question</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>first-contact</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Firefox 126</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1074</customer_id>
+    <customer_email>ann.iyer@example.com</customer_email>
+    <customer_name>Ann Iyer</customer_name>
+    <subject>Thanks for the great support</subject>
+    <description>Just wanted to say thank you to the support team. This is critical and production is down.</description>
+    <category>other</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags><tag>mobile</tag></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Chrome 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1075</customer_id>
+    <customer_email>ivan.haas@example.com</customer_email>
+    <customer_name>Ivan Haas</customer_name>
+    <subject>Bug with steps to reproduce</subject>
+    <description>Bug: steps to reproduce a crash when opening reports. This is important and blocking my work, please treat it asap.</description>
+    <category>bug_report</category>
+    <priority>high</priority>
+    <status>waiting_customer</status>
+    <assigned_to>agent-8</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Safari 17</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1076</customer_id>
+    <customer_email>femi.jung@example.com</customer_email>
+    <customer_name>Femi Jung</customer_name>
+    <subject>Dashboard page not working</subject>
+    <description>The dashboard page is not working and shows an error.</description>
+    <category>technical_issue</category>
+    <priority>medium</priority>
+    <status>closed</status>
+    <assigned_to></assigned_to>
+    <tags><tag>mobile</tag></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Safari 17</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1077</customer_id>
+    <customer_email>femi.iyer@example.com</customer_email>
+    <customer_name>Femi Iyer</customer_name>
+    <subject>Dashboard page not working</subject>
+    <description>The dashboard page is not working and shows an error. This is critical and production is down.</description>
+    <category>technical_issue</category>
+    <priority>urgent</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>api</source>
+      <browser>Edge 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1078</customer_id>
+    <customer_email>chloe.iyer@example.com</customer_email>
+    <customer_name>Chloe Iyer</customer_name>
+    <subject>Dashboard page not working</subject>
+    <description>The dashboard page is not working and shows an error. This is important and blocking my work, please treat it asap.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>closed</status>
+    <assigned_to></assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Safari 17</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1079</customer_id>
+    <customer_email>elena.costa@example.com</customer_email>
+    <customer_name>Elena Costa</customer_name>
+    <subject>Cannot login to my account</subject>
+    <description>I cannot log in to my account even after a password reset.</description>
+    <category>account_access</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>first-contact</tag><tag>mobile</tag></tags>
+    <metadata>
+      <source>api</source>
+      <browser>Edge 124</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1080</customer_id>
+    <customer_email>jana.farah@example.com</customer_email>
+    <customer_name>Jana Farah</customer_name>
+    <subject>2FA codes never arrive</subject>
+    <description>My two-factor authentication codes never arrive by SMS. This is only a minor cosmetic issue.</description>
+    <category>account_access</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>enterprise</tag></tags>
+    <metadata>
+      <source>phone</source>
+      <browser>Edge 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1081</customer_id>
+    <customer_email>jana.iyer@example.com</customer_email>
+    <customer_name>Jana Iyer</customer_name>
+    <subject>Inquiry about availability</subject>
+    <description>An inquiry about regional availability of your product. This is only a minor cosmetic issue.</description>
+    <category>other</category>
+    <priority>low</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags><tag>vip</tag><tag>follow-up</tag></tags>
+    <metadata>
+      <source>phone</source>
+      <browser>Firefox 126</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1082</customer_id>
+    <customer_email>bram.farah@example.com</customer_email>
+    <customer_name>Bram Farah</customer_name>
+    <subject>Payment keeps failing</subject>
+    <description>My credit card payment keeps failing at checkout. This is critical and production is down.</description>
+    <category>billing_question</category>
+    <priority>urgent</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>enterprise</tag></tags>
+    <metadata>
+      <source>web_form</source>
+      <browser>Safari 17</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1083</customer_id>
+    <customer_email>jana.greco@example.com</customer_email>
+    <customer_name>Jana Greco</customer_name>
+    <subject>Cannot login to my account</subject>
+    <description>I cannot log in to my account even after a password reset.</description>
+    <category>account_access</category>
+    <priority>medium</priority>
+    <status>resolved</status>
+    <assigned_to>agent-6</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Chrome 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1084</customer_id>
+    <customer_email>hiro.bishop@example.com</customer_email>
+    <customer_name>Hiro Bishop</customer_name>
+    <subject>Sync is extremely slow</subject>
+    <description>Data sync is extremely slow and sometimes times out.</description>
+    <category>technical_issue</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>follow-up</tag></tags>
+    <metadata>
+      <source>web_form</source>
+      <browser>Firefox 126</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1085</customer_id>
+    <customer_email>hiro.iyer@example.com</customer_email>
+    <customer_name>Hiro Iyer</customer_name>
+    <subject>Inquiry about availability</subject>
+    <description>An inquiry about regional availability of your product. This is only a minor cosmetic issue.</description>
+    <category>other</category>
+    <priority>low</priority>
+    <status>resolved</status>
+    <assigned_to>agent-1</assigned_to>
+    <tags><tag>follow-up</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Edge 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1086</customer_id>
+    <customer_email>diego.bishop@example.com</customer_email>
+    <customer_name>Diego Bishop</customer_name>
+    <subject>Feature request: PDF export</subject>
+    <description>Feature request: an enhancement to export reports as PDF.</description>
+    <category>feature_request</category>
+    <priority>medium</priority>
+    <status>closed</status>
+    <assigned_to>agent-7</assigned_to>
+    <tags><tag>enterprise</tag><tag>vip</tag></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Safari 17</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1087</customer_id>
+    <customer_email>ann.greco@example.com</customer_email>
+    <customer_name>Ann Greco</customer_name>
+    <subject>Export feature throws an error</subject>
+    <description>I get an error and the app freezes when I export data.</description>
+    <category>technical_issue</category>
+    <priority>medium</priority>
+    <status>resolved</status>
+    <assigned_to></assigned_to>
+    <tags><tag>escalated</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Edge 124</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1088</customer_id>
+    <customer_email>ann.farah@example.com</customer_email>
+    <customer_name>Ann Farah</customer_name>
+    <subject>Dashboard page not working</subject>
+    <description>The dashboard page is not working and shows an error. This is important and blocking my work, please treat it asap.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>closed</status>
+    <assigned_to></assigned_to>
+    <tags><tag>follow-up</tag></tags>
+    <metadata>
+      <source>api</source>
+      <browser>Firefox 126</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1089</customer_id>
+    <customer_email>bram.haas@example.com</customer_email>
+    <customer_name>Bram Haas</customer_name>
+    <subject>Update to my contact details</subject>
+    <description>I would like to update the contact details on file.</description>
+    <category>other</category>
+    <priority>medium</priority>
+    <status>resolved</status>
+    <assigned_to>agent-8</assigned_to>
+    <tags><tag>escalated</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Safari 17</browser>
+      <device_type>desktop</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1090</customer_id>
+    <customer_email>chloe.farah@example.com</customer_email>
+    <customer_name>Chloe Farah</customer_name>
+    <subject>Update to my contact details</subject>
+    <description>I would like to update the contact details on file. This is critical and production is down.</description>
+    <category>other</category>
+    <priority>urgent</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>follow-up</tag></tags>
+    <metadata>
+      <source>api</source>
+      <browser>Firefox 126</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1091</customer_id>
+    <customer_email>ivan.bishop@example.com</customer_email>
+    <customer_name>Ivan Bishop</customer_name>
+    <subject>Export feature throws an error</subject>
+    <description>I get an error and the app freezes when I export data. This is important and blocking my work, please treat it asap.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>waiting_customer</status>
+    <assigned_to></assigned_to>
+    <tags><tag>enterprise</tag><tag>first-contact</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Safari 17</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1092</customer_id>
+    <customer_email>bram.jung@example.com</customer_email>
+    <customer_name>Bram Jung</customer_name>
+    <subject>Application crashes on startup</subject>
+    <description>The application crashes every time I open it on desktop. This is important and blocking my work, please treat it asap.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to>agent-6</assigned_to>
+    <tags><tag>follow-up</tag></tags>
+    <metadata>
+      <source>phone</source>
+      <browser>Safari 17</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1093</customer_id>
+    <customer_email>ann.adler@example.com</customer_email>
+    <customer_name>Ann Adler</customer_name>
+    <subject>Question about subscription pricing</subject>
+    <description>I have a billing question about subscription pricing tiers. This is only a minor cosmetic issue.</description>
+    <category>billing_question</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to>agent-7</assigned_to>
+    <tags><tag>enterprise</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Chrome 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1094</customer_id>
+    <customer_email>diego.engel@example.com</customer_email>
+    <customer_name>Diego Engel</customer_name>
+    <subject>Bug with steps to reproduce</subject>
+    <description>Bug: steps to reproduce a crash when opening reports. This is important and blocking my work, please treat it asap.</description>
+    <category>bug_report</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>vip</tag></tags>
+    <metadata>
+      <source>web_form</source>
+      <browser>Chrome 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1095</customer_id>
+    <customer_email>ivan.bishop@example.com</customer_email>
+    <customer_name>Ivan Bishop</customer_name>
+    <subject>Defect in search results</subject>
+    <description>There is a defect causing a regression in search results.</description>
+    <category>bug_report</category>
+    <priority>medium</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags><tag>mobile</tag></tags>
+    <metadata>
+      <source>api</source>
+      <browser>Edge 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1096</customer_id>
+    <customer_email>hiro.jung@example.com</customer_email>
+    <customer_name>Hiro Jung</customer_name>
+    <subject>Thanks for the great support</subject>
+    <description>Just wanted to say thank you to the support team. This is critical and production is down.</description>
+    <category>other</category>
+    <priority>urgent</priority>
+    <status>resolved</status>
+    <assigned_to>agent-4</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>phone</source>
+      <browser>Chrome 124</browser>
+      <device_type>tablet</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1097</customer_id>
+    <customer_email>ann.bishop@example.com</customer_email>
+    <customer_name>Ann Bishop</customer_name>
+    <subject>Refund request for duplicate charge</subject>
+    <description>Please process a refund for a duplicate payment on my invoice. This is critical and production is down.</description>
+    <category>billing_question</category>
+    <priority>urgent</priority>
+    <status>waiting_customer</status>
+    <assigned_to>agent-1</assigned_to>
+    <tags><tag>vip</tag></tags>
+    <metadata>
+      <source>chat</source>
+      <browser>Chrome 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1098</customer_id>
+    <customer_email>ann.bishop@example.com</customer_email>
+    <customer_name>Ann Bishop</customer_name>
+    <subject>Suggestion for better filters</subject>
+    <description>I wish the filters had more options; it would help a lot. This is important and blocking my work, please treat it asap.</description>
+    <category>feature_request</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to>agent-1</assigned_to>
+    <tags></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Edge 124</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+  <ticket>
+    <customer_id>CUST-1099</customer_id>
+    <customer_email>hiro.farah@example.com</customer_email>
+    <customer_name>Hiro Farah</customer_name>
+    <subject>Update to my contact details</subject>
+    <description>I would like to update the contact details on file.</description>
+    <category>other</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags><tag>escalated</tag></tags>
+    <metadata>
+      <source>email</source>
+      <browser>Firefox 126</browser>
+      <device_type>mobile</device_type>
+    </metadata>
+  </ticket>
+</tickets>

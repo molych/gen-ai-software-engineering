@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_id>CUST-X3</customer_id>
+    <customer_email>enum@example.com</customer_email>
+    <customer_name>Enum Tester</customer_name>
+    <subject>Strange category</subject>
+    <description>This ticket uses a category value that does not exist.</description>
+    <category>not_a_real_category</category>
+  </ticket>
+</tickets>

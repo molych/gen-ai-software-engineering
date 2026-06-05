@@ -1,0 +1,45 @@
+{
+  "format": "json",
+  "content": [
+    {
+      "customer_id": "CUST-9001",
+      "customer_email": "rosa.klein@example.com",
+      "customer_name": "Rosa Klein",
+      "subject": "Cannot login after password reset",
+      "description": "I cannot log in to my account even after a password reset. This is critical.",
+      "metadata": { "source": "web_form", "device_type": "desktop" }
+    },
+    {
+      "customer_id": "CUST-9002",
+      "customer_email": "tom.becker@example.com",
+      "customer_name": "Tom Becker",
+      "subject": "Refund request for duplicate charge",
+      "description": "Please process a refund for a duplicate payment on my latest invoice.",
+      "metadata": { "source": "email", "device_type": "mobile" }
+    },
+    {
+      "customer_id": "CUST-9003",
+      "customer_email": "mei.lin@example.com",
+      "customer_name": "Mei Lin",
+      "subject": "Application crashes on startup",
+      "description": "The application crashes every time I open it and shows an error. Blocking my work.",
+      "metadata": { "source": "chat", "device_type": "tablet" }
+    },
+    {
+      "customer_id": "CUST-9004",
+      "customer_email": "omar.said@example.com",
+      "customer_name": "Omar Said",
+      "subject": "Please add a dark mode",
+      "description": "It would be nice if you could please add a dark mode feature. Minor request.",
+      "metadata": { "source": "web_form", "device_type": "desktop" }
+    },
+    {
+      "customer_id": "CUST-9005",
+      "customer_email": "ana.ruiz@example.com",
+      "customer_name": "Ana Ruiz",
+      "subject": "Bug with steps to reproduce",
+      "description": "Bug: steps to reproduce a crash when opening the reports page repeatedly.",
+      "metadata": { "source": "api", "device_type": "desktop" }
+    }
+  ]
+}

@@ -17,6 +17,9 @@ dist/
 # IDE and editor files
 .idea/
 .vscode/
+
+# Claude Code — keep shared config, ignore personal/local overrides
+.claude/settings.local.json
 *.swp
 *.swo
 *~
