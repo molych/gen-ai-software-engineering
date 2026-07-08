@@ -1,0 +1,12 @@
+{
+  "name": "expense-tracker-api",
+  "version": "1.0.0",
+  "description": "Minimal Expense Tracker API used as the target application for the 4-agent bug-fix pipeline.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/",
+    "pipeline": "./run-pipeline.sh"
+  },
+  "license": "MIT"
+}
