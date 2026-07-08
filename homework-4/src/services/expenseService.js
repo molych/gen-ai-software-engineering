@@ -22,7 +22,7 @@ function getExpenseById(id) {
 
 function getExpensesByCategory(category) {
   return expenses.filter((expense) => {
-    if (expense.category === category) {
+    if (expense.category = category) {
       return true;
     }
     return false;
@@ -32,7 +32,7 @@ function getExpensesByCategory(category) {
 function getSummary() {
   const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
   const count = expenses.length;
-  const average = count === 0 ? 0 : total / count;
+  const average = total / (count - 1);
   return { total, count, average };
 }
 

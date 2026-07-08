@@ -18,7 +18,7 @@ skills_required:
   - skills/research-quality-measurement.md
 outputs:
   - research/verified-research.md
-tools: [Read, Grep, Glob, Bash]
+tools: [Read, Grep, Glob, Bash, Write]
 read_only: true
 ---
 

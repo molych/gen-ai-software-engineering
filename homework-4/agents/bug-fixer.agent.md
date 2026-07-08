@@ -16,7 +16,7 @@ inputs:
   - implementation-plan.md
 outputs:
   - fix-summary.md
-tools: [Read, Edit, Bash]
+tools: [Read, Edit, Bash, Write]
 ---
 
 # Bug Fixer
