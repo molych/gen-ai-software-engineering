@@ -1,0 +1,32 @@
+{
+  "message_id": "a2a25214-424d-4a34-8577-89d3f075d46b",
+  "timestamp": "2026-07-09T10:58:23Z",
+  "source_stage": "settlement_processor",
+  "target_stage": "orchestrator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN001",
+    "timestamp": "2026-03-16T09:00:00Z",
+    "source_account": "ACC-**01",
+    "destination_account": "ACC-**01",
+    "amount": "1500.00",
+    "currency": "USD",
+    "transaction_type": "transfer",
+    "metadata": {
+      "channel": "online",
+      "country": "US"
+    },
+    "status": "validated",
+    "risk_score": 0,
+    "risk_level": "low",
+    "risk_flags": [],
+    "flagged_for_review": false,
+    "compliance_status": "clear",
+    "compliance_notes": [
+      "no_compliance_concerns"
+    ],
+    "settlement_id": "09bacf45-cd19-4b10-a36d-66cfcf391dcf",
+    "settled_at": "2026-07-09T10:58:23Z",
+    "final_status": "settled"
+  }
+}
