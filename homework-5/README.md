@@ -55,6 +55,6 @@ homework-5/
     └── screenshots/
         ├── github-mcp-result.png
         ├── filesystem-mcp-result.png
-        ├── jira-or-notion-mcp-result.png
+        ├── notion-mcp-result.png
         └── custom-mcp-read-tool-result.png
 ```
