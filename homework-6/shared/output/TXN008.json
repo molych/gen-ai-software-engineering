@@ -1,6 +1,6 @@
 {
-  "message_id": "52ac362b-dc05-4078-9065-388bb79ccad7",
-  "timestamp": "2026-07-09T14:55:45Z",
+  "message_id": "cf20230f-539c-487c-9559-abd79c05a7b1",
+  "timestamp": "2026-07-09T14:56:24Z",
   "source_stage": "settlement_processor",
   "target_stage": "orchestrator",
   "message_type": "transaction",
@@ -25,8 +25,8 @@
     "compliance_notes": [
       "no_compliance_concerns"
     ],
-    "settlement_id": "729da021-3376-40ad-8e27-97a52bfdf019",
-    "settled_at": "2026-07-09T14:55:45Z",
+    "settlement_id": "bf698823-ca48-4d30-81f1-b68320ac251d",
+    "settled_at": "2026-07-09T14:56:24Z",
     "final_status": "settled"
   }
 }
