@@ -1,4 +1,8 @@
+import pytest
+
 from pipeline import fraud_detector
+
+pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
 
 
 def _record(**overrides):

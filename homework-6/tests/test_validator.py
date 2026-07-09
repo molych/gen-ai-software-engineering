@@ -2,7 +2,11 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 from pipeline import validator
+
+pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SAMPLES = {
