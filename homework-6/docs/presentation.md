@@ -89,8 +89,8 @@ sample-transactions.json
 
 ## Test Coverage
 
-- 55 tests across validator, fraud detector, compliance checker, settlement processor, orchestrator integration, and the MCP server
-- **95%+ coverage on `pipeline/`** — comfortably above the 80% hard gate and the 90% target
+- 84 tests across validator, fraud detector, compliance checker, settlement processor, common utilities, currency codes, orchestrator integration, an in-memory pipeline-chaining integration test, and the MCP server
+- **100% coverage on `pipeline/`** — comfortably above the 80% hard gate and the 90% target
 - Isolated from the real `shared/` directory via pytest's `tmp_path`
 
 ---
