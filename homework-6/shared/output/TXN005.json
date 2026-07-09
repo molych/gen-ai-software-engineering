@@ -1,0 +1,36 @@
+{
+  "message_id": "24a263b0-bb94-45e5-a224-f79078a20f21",
+  "timestamp": "2026-07-09T15:09:36Z",
+  "source_stage": "settlement_processor",
+  "target_stage": "orchestrator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN005",
+    "timestamp": "2026-03-16T10:00:00Z",
+    "source_account": "ACC-**05",
+    "destination_account": "ACC-**00",
+    "amount": "75000.00",
+    "currency": "USD",
+    "transaction_type": "wire_transfer",
+    "metadata": {
+      "channel": "branch",
+      "country": "US"
+    },
+    "status": "validated",
+    "risk_score": 70,
+    "risk_level": "high",
+    "risk_flags": [
+      "high_value",
+      "very_high_value",
+      "wire_transfer"
+    ],
+    "flagged_for_review": true,
+    "compliance_status": "ctr_flagged",
+    "compliance_notes": [
+      "amount_over_ctr_threshold:10000"
+    ],
+    "settlement_id": "731b6e45-f839-445c-adb8-477543d3cf2f",
+    "settled_at": "2026-07-09T15:09:36Z",
+    "final_status": "settled"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "message_id": "7dadf35f-5216-4283-8754-b4f2d85aa682",
+  "timestamp": "2026-07-09T15:09:36Z",
+  "source_stage": "compliance_checker",
+  "target_stage": "settlement_processor",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN004",
+    "timestamp": "2026-03-16T02:47:00Z",
+    "source_account": "ACC-**04",
+    "destination_account": "ACC-**00",
+    "amount": "500.00",
+    "currency": "EUR",
+    "transaction_type": "transfer",
+    "metadata": {
+      "channel": "api",
+      "country": "DE"
+    },
+    "status": "validated",
+    "risk_score": 40,
+    "risk_level": "medium",
+    "risk_flags": [
+      "cross_border",
+      "unusual_timing"
+    ],
+    "flagged_for_review": true,
+    "compliance_status": "held_for_review",
+    "compliance_notes": [
+      "cross_border_plus_unusual_timing"
+    ]
+  }
+}

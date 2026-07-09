@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Transaction Pipeline Dashboard</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { margin-bottom: 0.25rem; }
+  .subtitle { color: #777; margin-top: 0; }
+  .stats { display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; }
+  .stat { border: 1px solid #ccc; border-radius: 8px; padding: 0.75rem 1.25rem; min-width: 120px; text-align: center; }
+  .stat .value { font-size: 1.75rem; font-weight: bold; }
+  .stat .label { font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.03em; }
+  form.run-form { margin: 1rem 0 2rem; }
+  button { font-size: 1rem; padding: 0.6rem 1.2rem; border-radius: 6px; border: none; background: #2563eb; color: white; cursor: pointer; }
+  button:hover { background: #1d4ed8; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #ddd; font-size: 0.9rem; }
+  th { color: #666; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.03em; }
+  .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+  .badge-settled { background: #dcfce7; color: #166534; }
+  .badge-held_for_review { background: #fef9c3; color: #854d0e; }
+  .badge-rejected { background: #fee2e2; color: #991b1b; }
+  .empty { color: #888; font-style: italic; }
+</style>
+</head>
+<body>
+  <h1>Transaction Pipeline Dashboard</h1>
+  <p class="subtitle">Validation &rarr; Fraud Detection &rarr; Compliance Check &rarr; Settlement</p>
+
+  <form class="run-form" method="post" action="{{ url_for('run') }}">
+    <button type="submit">Run Pipeline</button>
+  </form>
+
+  {% if summary %}
+  <div class="stats">
+    <div class="stat"><div class="value">{{ summary.total }}</div><div class="label">Total</div></div>
+    <div class="stat"><div class="value">{{ summary.settled }}</div><div class="label">Settled</div></div>
+    <div class="stat"><div class="value">{{ summary.held_for_review }}</div><div class="label">Held</div></div>
+    <div class="stat"><div class="value">{{ summary.rejected }}</div><div class="label">Rejected</div></div>
+  </div>
+  <p class="subtitle">Last run: {{ summary.generated_at }}</p>
+  {% else %}
+  <p class="empty">No pipeline run yet — click "Run Pipeline" to process sample-transactions.json.</p>
+  {% endif %}
+
+  {% if records %}
+  <table>
+    <thead>
+      <tr>
+        <th>Transaction ID</th>
+        <th>Status</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Risk Level</th>
+        <th>Reason / Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in records %}
+      <tr>
+        <td>{{ r.transaction_id }}</td>
+        <td><span class="badge badge-{{ r.final_status }}">{{ r.final_status }}</span></td>
+        <td>{{ r.amount or '-' }}</td>
+        <td>{{ r.currency or '-' }}</td>
+        <td>{{ r.risk_level or '-' }}</td>
+        <td>
+          {% if r.final_status == 'rejected' %}
+            {{ r.reason }}
+          {% elif r.compliance_notes %}
+            {{ r.compliance_notes | join(', ') }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</body>
+</html>

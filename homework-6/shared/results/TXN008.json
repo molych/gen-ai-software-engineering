@@ -1,0 +1,25 @@
+{
+  "transaction_id": "TXN008",
+  "timestamp": "2026-03-16T10:15:00Z",
+  "source_account": "ACC-**08",
+  "destination_account": "ACC-**00",
+  "amount": "3200.00",
+  "currency": "USD",
+  "transaction_type": "transfer",
+  "metadata": {
+    "channel": "mobile",
+    "country": "US"
+  },
+  "status": "validated",
+  "risk_score": 0,
+  "risk_level": "low",
+  "risk_flags": [],
+  "flagged_for_review": false,
+  "compliance_status": "clear",
+  "compliance_notes": [
+    "no_compliance_concerns"
+  ],
+  "settlement_id": "bf0e2902-827f-4c9a-9f0f-c95c5c7345ec",
+  "settled_at": "2026-07-09T15:09:36Z",
+  "final_status": "settled"
+}

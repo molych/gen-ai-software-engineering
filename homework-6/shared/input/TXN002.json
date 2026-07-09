@@ -1,0 +1,20 @@
+{
+  "message_id": "3cfabccf-24b3-45fa-9c1c-cc34b5193373",
+  "timestamp": "2026-07-09T15:09:36Z",
+  "source_stage": "orchestrator",
+  "target_stage": "validator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN002",
+    "timestamp": "2026-03-16T09:15:00Z",
+    "source_account": "ACC-**02",
+    "destination_account": "ACC-**01",
+    "amount": "25000.00",
+    "currency": "USD",
+    "transaction_type": "wire_transfer",
+    "metadata": {
+      "channel": "branch",
+      "country": "US"
+    }
+  }
+}

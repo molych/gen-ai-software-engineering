@@ -1,0 +1,20 @@
+{
+  "message_id": "d0897f5c-c259-4e29-9adb-6612b08d68f2",
+  "timestamp": "2026-07-09T15:09:36Z",
+  "source_stage": "orchestrator",
+  "target_stage": "validator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN007",
+    "timestamp": "2026-03-16T10:10:00Z",
+    "source_account": "ACC-**07",
+    "destination_account": "ACC-**00",
+    "amount": "-100.00",
+    "currency": "GBP",
+    "transaction_type": "refund",
+    "metadata": {
+      "channel": "online",
+      "country": "GB"
+    }
+  }
+}

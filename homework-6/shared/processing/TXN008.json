@@ -1,0 +1,29 @@
+{
+  "message_id": "be7b9e18-4342-4e22-913b-baa19dd355c8",
+  "timestamp": "2026-07-09T15:09:36Z",
+  "source_stage": "compliance_checker",
+  "target_stage": "settlement_processor",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN008",
+    "timestamp": "2026-03-16T10:15:00Z",
+    "source_account": "ACC-**08",
+    "destination_account": "ACC-**00",
+    "amount": "3200.00",
+    "currency": "USD",
+    "transaction_type": "transfer",
+    "metadata": {
+      "channel": "mobile",
+      "country": "US"
+    },
+    "status": "validated",
+    "risk_score": 0,
+    "risk_level": "low",
+    "risk_flags": [],
+    "flagged_for_review": false,
+    "compliance_status": "clear",
+    "compliance_notes": [
+      "no_compliance_concerns"
+    ]
+  }
+}
