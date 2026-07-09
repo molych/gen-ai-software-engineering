@@ -23,7 +23,7 @@
   "compliance_notes": [
     "amount_over_ctr_threshold:10000"
   ],
-  "settlement_id": "f52b699e-606c-4a76-a585-9524b89dbd37",
-  "settled_at": "2026-07-09T14:49:16Z",
+  "settlement_id": "cb598ca7-f97b-465e-b7ab-aab36bd3b05d",
+  "settled_at": "2026-07-09T14:55:45Z",
   "final_status": "settled"
 }
