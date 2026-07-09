@@ -1,0 +1,25 @@
+{
+  "transaction_id": "TXN003",
+  "timestamp": "2026-03-16T09:30:00Z",
+  "source_account": "ACC-**03",
+  "destination_account": "ACC-**99",
+  "amount": "9999.99",
+  "currency": "USD",
+  "transaction_type": "transfer",
+  "metadata": {
+    "channel": "online",
+    "country": "US"
+  },
+  "status": "validated",
+  "risk_score": 0,
+  "risk_level": "low",
+  "risk_flags": [],
+  "flagged_for_review": false,
+  "compliance_status": "clear",
+  "compliance_notes": [
+    "no_compliance_concerns"
+  ],
+  "settlement_id": "8d595690-1044-47e4-a7dd-b0523eb88c3f",
+  "settled_at": "2026-07-09T14:49:16Z",
+  "final_status": "settled"
+}

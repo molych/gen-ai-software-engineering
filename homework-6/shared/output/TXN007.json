@@ -1,0 +1,23 @@
+{
+  "message_id": "fc550f98-0a26-4c8b-8459-6e98c83f6970",
+  "timestamp": "2026-07-09T14:49:16Z",
+  "source_stage": "validator",
+  "target_stage": "orchestrator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN007",
+    "timestamp": "2026-03-16T10:10:00Z",
+    "source_account": "ACC-**07",
+    "destination_account": "ACC-**00",
+    "amount": "-100.00",
+    "currency": "GBP",
+    "transaction_type": "refund",
+    "metadata": {
+      "channel": "online",
+      "country": "GB"
+    },
+    "status": "rejected",
+    "reason": "amount_must_be_positive",
+    "final_status": "rejected"
+  }
+}

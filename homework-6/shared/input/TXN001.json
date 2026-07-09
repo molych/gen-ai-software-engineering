@@ -1,0 +1,20 @@
+{
+  "message_id": "d67ffe46-fa81-400e-b773-8ced2552af5a",
+  "timestamp": "2026-07-09T14:49:16Z",
+  "source_stage": "orchestrator",
+  "target_stage": "validator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN001",
+    "timestamp": "2026-03-16T09:00:00Z",
+    "source_account": "ACC-**01",
+    "destination_account": "ACC-**01",
+    "amount": "1500.00",
+    "currency": "USD",
+    "transaction_type": "transfer",
+    "metadata": {
+      "channel": "online",
+      "country": "US"
+    }
+  }
+}

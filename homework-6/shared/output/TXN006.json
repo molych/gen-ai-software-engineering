@@ -1,0 +1,23 @@
+{
+  "message_id": "902d97e4-8fcd-438a-aa73-94b0647666ca",
+  "timestamp": "2026-07-09T14:49:16Z",
+  "source_stage": "validator",
+  "target_stage": "orchestrator",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN006",
+    "timestamp": "2026-03-16T10:05:00Z",
+    "source_account": "ACC-**06",
+    "destination_account": "ACC-**00",
+    "amount": "200.00",
+    "currency": "XYZ",
+    "transaction_type": "transfer",
+    "metadata": {
+      "channel": "online",
+      "country": "US"
+    },
+    "status": "rejected",
+    "reason": "invalid_currency_code:XYZ",
+    "final_status": "rejected"
+  }
+}
