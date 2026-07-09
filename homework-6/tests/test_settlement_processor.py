@@ -1,8 +1,9 @@
-import pytest
+import runpy
+from pathlib import Path
 
 from pipeline import settlement_processor
 
-pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def _record(compliance_status):
@@ -33,3 +34,13 @@ def test_settlement_ids_are_unique():
     first = settlement_processor.process_transaction(_record("clear"))
     second = settlement_processor.process_transaction(_record("clear"))
     assert first["settlement_id"] != second["settlement_id"]
+
+
+def test_run_as_script_hits_direct_execution_bootstrap():
+    """Executes pipeline/settlement_processor.py via runpy with
+    run_name="__main__" so __package__ is empty (matching
+    `python pipeline/settlement_processor.py` direct execution) and the
+    sys.path bootstrap import branch actually runs -- in-process, so
+    coverage.py observes it (a subprocess would not be measured by the
+    parent's coverage run)."""
+    runpy.run_path(str(PROJECT_ROOT / "pipeline" / "settlement_processor.py"), run_name="__main__")

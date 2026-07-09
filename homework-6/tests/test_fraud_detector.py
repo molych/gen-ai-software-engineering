@@ -1,8 +1,9 @@
-import pytest
+import runpy
+from pathlib import Path
 
 from pipeline import fraud_detector
 
-pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def _record(**overrides):
@@ -92,3 +93,12 @@ def test_exact_high_value_threshold_not_flagged():
 def test_invalid_timestamp_does_not_crash_and_skips_timing_flag():
     result = fraud_detector.process_transaction(_record(timestamp="not-a-timestamp"))
     assert "unusual_timing" not in result["risk_flags"]
+
+
+def test_run_as_script_hits_direct_execution_bootstrap():
+    """Executes pipeline/fraud_detector.py via runpy with run_name="__main__"
+    so __package__ is empty (matching `python pipeline/fraud_detector.py`
+    direct execution) and the sys.path bootstrap import branch actually
+    runs -- in-process, so coverage.py observes it (a subprocess would not
+    be measured by the parent's coverage run)."""
+    runpy.run_path(str(PROJECT_ROOT / "pipeline" / "fraud_detector.py"), run_name="__main__")

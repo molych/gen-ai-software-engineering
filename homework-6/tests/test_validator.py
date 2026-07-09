@@ -1,12 +1,9 @@
 import json
+import runpy
 import sys
 from pathlib import Path
 
-import pytest
-
 from pipeline import validator
-
-pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SAMPLES = {
@@ -147,3 +144,21 @@ def test_main_without_dry_run_flag_still_runs(tmp_path, monkeypatch, capsys):
     validator.main()
     captured = capsys.readouterr()
     assert "Total transactions:   1" in captured.out
+
+
+def test_run_as_script_hits_direct_execution_bootstrap(tmp_path, monkeypatch, capsys):
+    """Executes pipeline/validator.py via runpy with run_name="__main__" so
+    __package__ is empty (matching `python pipeline/validator.py --dry-run`
+    direct execution, as documented in HOWTORUN.md) and the sys.path
+    bootstrap import branch plus the `if __name__ == "__main__": main()`
+    guard both actually run -- in-process, so coverage.py observes them
+    (a subprocess would not be measured by the parent's coverage run)."""
+    sample_file = tmp_path / "sample.json"
+    sample_file.write_text(json.dumps([SAMPLES["TXN001"], SAMPLES["TXN006"]]), encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["validator.py", "--input", str(sample_file), "--dry-run"])
+
+    runpy.run_path(str(PROJECT_ROOT / "pipeline" / "validator.py"), run_name="__main__")
+
+    captured = capsys.readouterr()
+    assert "Total transactions:   2" in captured.out
+    assert "invalid_currency_code:XYZ" in captured.out

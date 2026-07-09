@@ -2,11 +2,7 @@ import json
 import sys
 from pathlib import Path
 
-import pytest
-
 import orchestrator
-
-pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SAMPLE_INPUT = PROJECT_ROOT / "sample-transactions.json"

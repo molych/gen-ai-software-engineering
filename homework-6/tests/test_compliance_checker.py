@@ -1,8 +1,9 @@
-import pytest
+import runpy
+from pathlib import Path
 
 from pipeline import compliance_checker
 
-pytestmark = pytest.mark.skip(reason="TEMP: demonstrating coverage-gate hook block, revert before real push")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def _record(**overrides):
@@ -53,3 +54,13 @@ def test_restricted_country_is_held_for_review(monkeypatch):
 def test_missing_metadata_defaults_to_no_country():
     result = compliance_checker.process_transaction(_record(metadata=None))
     assert result["compliance_status"] == "clear"
+
+
+def test_run_as_script_hits_direct_execution_bootstrap():
+    """Executes pipeline/compliance_checker.py via runpy with
+    run_name="__main__" so __package__ is empty (matching
+    `python pipeline/compliance_checker.py` direct execution) and the
+    sys.path bootstrap import branch actually runs -- in-process, so
+    coverage.py observes it (a subprocess would not be measured by the
+    parent's coverage run)."""
+    runpy.run_path(str(PROJECT_ROOT / "pipeline" / "compliance_checker.py"), run_name="__main__")
